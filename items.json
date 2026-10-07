@@ -368,7 +368,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Increases attack damage by 35% when jumping or rolling."
+          ],
           "compatible_effects": [
             {
               "name": "Brawler",
@@ -1013,7 +1015,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Frost attacks deal 30% more damage."
+          ],
           "compatible_effects": [
             {
               "name": "Critical Edge",
@@ -1206,7 +1210,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Deal 60% more damage to enemies who are at full health."
+          ],
           "compatible_effects": [
             {
               "name": "Brawler",
@@ -1449,7 +1455,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Hits with this weapon explode on impact!"
+          ],
           "compatible_effects": [
             {
               "name": "Brawler",
@@ -1507,7 +1515,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Reduces ranged ammo cooldown time by 35%."
+          ],
           "compatible_effects": [
             {
               "name": "Critical Edge",
@@ -1621,7 +1631,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Applies Soulsick status to enemies on hit."
+          ],
           "compatible_effects": [
             {
               "name": "Bully",
@@ -1684,7 +1696,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Increases chance to stagger enemies on hit by 60%."
+          ],
           "compatible_effects": [
             {
               "name": "Critical Edge",
@@ -1941,7 +1955,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Take 25% less damage."
+          ],
           "compatible_effects": [
             {
               "name": "Brawler",
@@ -2362,7 +2378,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Reduces rolling cooldown time by 40%."
+          ],
           "compatible_effects": [
             {
               "name": "Bounty Hunter",
@@ -3008,7 +3026,8 @@
             "UNIQUE"
           ],
           "effects": [
-            "Increases healing given to yourself and allies by 50%."
+            "Increases healing given to yourself and allies by 50%.",
+            "Increases healing given to the player and allies by 50%."
           ],
           "compatible_effects": [
             {
@@ -3082,7 +3101,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Melee attacks deal 50% more damage to secondary targets."
+          ],
           "compatible_effects": [
             {
               "name": "Bounty Hunter",
@@ -3420,7 +3441,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Fire attacks deal 20% more damage."
+          ],
           "compatible_effects": [
             {
               "name": "Bounty Hunter",
@@ -3586,7 +3609,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Grants a 20% chance to receive additional emeralds."
+          ],
           "compatible_effects": [
             {
               "name": "Bully",
@@ -3649,7 +3674,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Increases melee attack speed by 30%."
+          ],
           "compatible_effects": [
             {
               "name": "Bounty Hunter",
@@ -3819,7 +3846,9 @@
           "rarity": [
             "UNIQUE"
           ],
-          "effects": [],
+          "effects": [
+            "Poison attacks deal 20% more damage."
+          ],
           "compatible_effects": [
             {
               "name": "Bounty Hunter",
