@@ -182,6 +182,34 @@ def parse_unique_effects(content, effect_index):
     return unique_effects
 
 
+def parse_unique_effect(content):
+    """Parse the weapon #Unique_effect ``<dl>`` (singular) into fixed-effect text.
+
+    Weapons carry their fixed, non-rerollable effect as a single ``<dl>`` under
+    the ``#Unique_effect`` heading (e.g. ``"Attacks have a 70% chance to grant
+    the Strength status on hit."``). Returns the cleaned text or ``None`` when
+    the section or its ``<dl>`` is absent. ``select_one("#Unique_effect")``
+    matches the id exactly, so the armor ``#Unique_effects`` (plural) is not
+    caught here.
+    """
+    heading = content.select_one("#Unique_effect")
+    if not heading:
+        return None
+    dl = heading.find_parent().find_next_sibling("dl")
+    if not dl:
+        return None
+    text = clean_text(dl)
+    return text or None
+    heading = content.select_one("#Unique_effect")
+    if not heading:
+        return None
+    dl = heading.find_parent().find_next_sibling("dl")
+    if not dl:
+        return None
+    text = clean_text(dl)
+    return text or None
+
+
 def scrape_item(url, effect_index=None):
     effect_index = effect_index or {}
     soup = fetch(url)
@@ -246,6 +274,12 @@ def scrape_item(url, effect_index=None):
         # is broken down to per-piece entries and filled into effects.
         effects = [details["Effects"]] if details.get("Effects") else []
         effects.extend(parse_unique_effects(content, effect_index))
+
+        # Weapons: the #Unique_effect <dl> (singular) holds the fixed effect
+        # text, filled into effects when the section is present.
+        unique_effect = parse_unique_effect(content)
+        if unique_effect and unique_effect not in effects:
+            effects.append(unique_effect)
 
     result = {
         "image": image_url,
