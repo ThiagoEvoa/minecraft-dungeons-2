@@ -1,0 +1,24 @@
+---
+import type { Section } from "../lib/catalogue";
+import ItemCard from "./ItemCard.astro";
+
+export interface Props {
+  section: Section;
+}
+const { section } = Astro.props;
+
+const id = section.category
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/^-+|-+$/g, "");
+---
+
+<section class="catalogue-section" id={id} data-section aria-labelledby={`${id}-title`}>
+  <h2 class="section-title" id={`${id}-title`}>{section.category}</h2>
+  {
+    section.description && <p class="section-sub">{section.description}</p>
+  }
+  <div class="card-grid" data-section-grid>
+    {section.items.map((item) => <ItemCard item={item} />)}
+  </div>
+</section>

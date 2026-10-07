@@ -1,0 +1,58 @@
+---
+import type { Item, Rarity } from "../lib/catalogue";
+
+export interface Props {
+  item: Item;
+}
+const { item } = Astro.props;
+
+// Inline SVG placeholder shown when the external wiki icon URL fails to load
+// (missing-field / broken-image graceful degradation — user story 14).
+const PLACEHOLDER =
+  "data:image/svg+xml;utf8," +
+  encodeURIComponent(
+    `<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'>
+      <rect width='120' height='120' fill='#14171f'/>
+      <path d='M60 28 L88 60 L60 92 L32 60 Z' fill='none' stroke='#363d4d' stroke-width='3'/>
+      <circle cx='60' cy='60' r='8' fill='#363d4d'/>
+    </svg>`,
+  );
+
+// The icon may be empty for items lacking an image; degrade gracefully.
+const iconSrc = item.icon || PLACEHOLDER;
+
+const rarityPips = item.rarity.map((r: Rarity) => ({
+  className: `pip ${r.toLowerCase()}`,
+  label: r,
+}));
+---
+
+<button class="item-card" type="button" data-id={item.id}
+  data-rarity={item.rarity.join(" ")}
+  data-search={item.name.toLowerCase()}
+  aria-label={`Open details for ${item.name}`}>
+  <span class="icon-wrap">
+    <img
+      class="icon"
+      src={iconSrc}
+      alt={item.name}
+      width="150"
+      height="150"
+      loading="lazy"
+      decoding="async"
+      onerror={`this.onerror=null;this.src=${JSON.stringify(PLACEHOLDER)};this.classList.add('is-fallback');`}
+    />
+  </span>
+  <h3 class="item-name">{item.name}</h3>
+  {
+    item.type && (
+      <p class="item-type">{item.type}</p>
+    )
+  }
+  <div class="rarity" aria-label={`Rarity: ${item.rarity.join(", ")}`}>
+    {rarityPips.map((p) => (
+      <span class={p.className}>{p.label}</span>
+    ))}
+    {item.rarity.length === 0 && <span class="pip common">—</span>}
+  </div>
+</button>

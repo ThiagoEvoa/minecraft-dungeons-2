@@ -1,0 +1,23 @@
+---
+export interface Props {
+  itemCount?: number;
+}
+const { itemCount = 0 } = Astro.props;
+---
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <p class="hero-kicker">Minecraft Dungeons 2</p>
+    <h1 class="hero-title">
+      The <span class="glow">Items</span> Catalogue
+    </h1>
+    <p class="hero-lede">
+      Browse every weapon, armor set, artifact, and talisman — their effects,
+      compatible effects with percentage ranges, and variants — in one cinematic
+      catalogue.
+    </p>
+    <a class="hero-cta" href="#catalogue">
+      Explore {itemCount} items →
+    </a>
+  </div>
+</header>

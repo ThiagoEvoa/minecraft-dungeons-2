@@ -1,0 +1,66 @@
+---
+import type { Catalogue, Rarity } from "../lib/catalogue";
+import { buildSearchIndex, RARITY_ORDER } from "../lib/catalogue";
+import SearchFilterBar from "./SearchFilterBar.astro";
+import SectionList from "./SectionList.astro";
+
+export interface Props {
+  catalogue: Catalogue;
+}
+const { catalogue } = Astro.props;
+
+// Tiers actually present in the catalogue, in canonical order, for the filter.
+const presentTiers: Rarity[] = RARITY_ORDER.filter((tier) =>
+  catalogue.sections.some((s) => s.items.some((i) => i.rarity.includes(tier))),
+);
+
+// Serialise a client-consumable shape: full detail per item + precomputed
+// search index. No runtime data dependency — everything is embedded at build.
+const clientData = {
+  sections: catalogue.sections.map((section) => ({
+    category: section.category,
+    items: section.items.map((item) => ({
+      id: item.id,
+      name: item.name,
+      icon: item.icon,
+      description: item.description,
+      type: item.type,
+      rarity: item.rarity,
+      effects: item.effects,
+      compatibleEffects: item.compatibleEffects,
+      variants: item.variants,
+      searchIndex: buildSearchIndex(item),
+    })),
+  })),
+};
+
+const dataJson = JSON.stringify(clientData);
+---
+
+<div class="catalogue-wrap" id="catalogue">
+  <SearchFilterBar rarities={presentTiers} />
+
+  <div class="catalogue">
+    {catalogue.sections.map((section) => <SectionList section={section} />)}
+  </div>
+
+  <div class="empty-state" data-empty hidden>
+    <h3>No items found</h3>
+    <p>
+      No items match your search and rarity filter. Try clearing the search or
+      selecting “All”.
+    </p>
+  </div>
+
+  <!-- Modal skeleton; populated by the client view. -->
+  <div class="modal-overlay" data-modal-overlay hidden role="dialog"
+    aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal" data-modal role="document">
+      <button class="modal-close" type="button" data-modal-close
+        aria-label="Close details">&times;</button>
+      <div data-modal-body></div>
+    </div>
+  </div>
+
+  <script type="application/json" data-catalogue set:html={dataJson}></script>
+</div>

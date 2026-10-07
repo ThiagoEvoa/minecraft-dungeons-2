@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import Catalogue from "../components/Catalogue.astro";
+import Footer from "../components/Footer.astro";
+import { catalogue } from "../lib/load";
+import { countItems } from "../lib/catalogue";
+
+const itemCount = countItems(catalogue);
+const sectionCount = catalogue.sections.filter((s) => s.items.length > 0).length;
+---
+
+<BaseLayout>
+  <Hero itemCount={itemCount} />
+
+  <main class="page">
+    <Catalogue catalogue={catalogue} />
+  </main>
+
+  <Footer itemCount={itemCount} sectionCount={sectionCount} />
+
+  <script type="module">
+    import { initCatalogueView } from "../scripts/catalogue-view";
+    initCatalogueView();
+  </script>
+</BaseLayout>
