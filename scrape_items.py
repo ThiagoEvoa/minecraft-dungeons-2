@@ -222,7 +222,7 @@ def scrape_item(url, effect_index=None):
         compatible_heading = content.select_one("#Compatible_effects")
         compatible_effects = []
         if compatible_heading:
-            table = compatible_heading.find_parent().find_next("table", class_="wikitable")
+            table = compatible_heading.find_parent().find_next_sibling("table", class_="wikitable")
             if table:
                 for row in table.select("tr"):
                     cells = row.find_all(["th", "td"], recursive=False)
