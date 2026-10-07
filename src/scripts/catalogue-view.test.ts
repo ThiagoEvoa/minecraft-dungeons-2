@@ -139,6 +139,53 @@ describe("initCatalogueView", () => {
     expect(uniqueBtn.getAttribute("aria-pressed")).toBe("true");
   });
 
+  it("filters by rarity regardless of card data-rarity casing (regression)", () => {
+    // ItemCard renders data-rarity capitalized (Rarity type: "Common"|"Rare"|...),
+    // while buttons emit lowercase. Filtering must be case-insensitive.
+    const doc = document.createElement("div");
+    doc.className = "catalogue-wrap";
+    const search = document.createElement("input");
+    search.id = "catalogue-search";
+    doc.appendChild(search);
+    for (const tier of ["all", "common", "unique"] as const) {
+      const b = document.createElement("button");
+      b.dataset.rarity = tier;
+      b.setAttribute("aria-pressed", tier === "all" ? "true" : "false");
+      const group = document.createElement("div");
+      group.className = "rarity-filter";
+      group.appendChild(b);
+      doc.appendChild(group);
+    }
+    const section = document.createElement("section");
+    section.className = "catalogue-section";
+    const grid = document.createElement("div");
+    grid.dataset.sectionGrid = "";
+    for (const [id, rarity] of [
+      ["melee-weapons-battle-hammer", "Common Rare Special"],
+      ["melee-weapons-awesomeaxe", "Unique"],
+    ] as const) {
+      const card = document.createElement("button");
+      card.className = "item-card";
+      card.dataset.id = id;
+      card.dataset.rarity = rarity;
+      grid.appendChild(card);
+    }
+    section.appendChild(grid);
+    doc.appendChild(section);
+    const script = document.createElement("script");
+    script.dataset.catalogue = "";
+    script.textContent = JSON.stringify({ sections: [] });
+    doc.appendChild(script);
+    document.body.appendChild(doc);
+
+    initCatalogueView();
+    const commonBtn = Array.from(
+      doc.querySelectorAll<HTMLButtonElement>(".rarity-filter button"),
+    ).find((b) => b.dataset.rarity === "common")!;
+    commonBtn.click();
+    expect(visibleCards(document)).toEqual(["melee-weapons-battle-hammer"]);
+  });
+
   it("searches across the search index", () => {
     const doc = buildDom(DATA);
     initCatalogueView();

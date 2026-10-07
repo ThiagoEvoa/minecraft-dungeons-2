@@ -72,7 +72,9 @@ export function initCatalogueView(): void {
   function matches(card: HTMLElement, query: string): boolean {
     const rarityOk =
       activeRarity === "all" ||
-      card.dataset.rarity?.split(/\s+/).includes(activeRarity);
+      (card.dataset.rarity?.toLowerCase().split(/\s+/) ?? []).includes(
+        activeRarity,
+      );
     if (!rarityOk) return false;
     if (!query) return true;
     const item = byId.get(card.dataset.id ?? "");
