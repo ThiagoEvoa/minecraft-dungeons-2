@@ -378,6 +378,10 @@ def main():
         "--delay", type=float, default=0.3,
         help="Seconds to wait between item requests (default: 0.3).",
     )
+    parser.add_argument(
+        "--dry-run", action="store_true",
+        help="Print item URLs without fetching them.",
+    )
     args = parser.parse_args()
 
     print(f"Fetching index: {URL}")
@@ -389,13 +393,14 @@ def main():
     # Fetch the Effect page once and build a name/fragment -> description
     # template index so armor pieces can resolve their linked effects.
     effect_index = {}
-    try:
-        print(f"Fetching effect index: {EFFECT_URL}")
-        effect_index = build_effect_index(fetch(EFFECT_URL))
-        print(f"Built effect index with {len(effect_index)} entries.")
-    except (HTTPError, URLError, TimeoutError) as error:
-        print(f"Warning: could not build effect index ({error}); "
-              "unique effects will fall back to raw text.")
+    if not args.dry_run:
+        try:
+            print(f"Fetching effect index: {EFFECT_URL}")
+            effect_index = build_effect_index(fetch(EFFECT_URL))
+            print(f"Built effect index with {len(effect_index)} entries.")
+        except (HTTPError, URLError, TimeoutError) as error:
+            print(f"Warning: could not build effect index ({error}); "
+                  "unique effects will fall back to raw text.")
 
     sections = collect_sections(content)
     total = sum(len(section["items"]) for section in sections)
@@ -409,6 +414,9 @@ def main():
         scraped = []
         for index, entry in enumerate(items, start=1):
             name = entry["name"]
+            if args.dry_run:
+                print(f"     [{index}/{len(items)}] {entry['url']}")
+                continue
             data = None
             for attempt in range(3):
                 try:
@@ -442,6 +450,11 @@ def main():
             "description": section["description"],
             "items": scraped,
         })
+
+    if args.dry_run:
+        print(f"\n[dry-run] would fetch {total} items across {len(sections)} "
+              f"sections. No files written.")
+        return 0
 
     with open(args.output, "w", encoding="utf-8") as handle:
         json.dump({"sections": results}, handle, indent=2, ensure_ascii=False)
