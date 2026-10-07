@@ -1,0 +1,45 @@
+---
+import type { Rarity } from "../lib/catalogue";
+
+export interface Props {
+  /** Canonical tiers shown as filter chips, in display order. */
+  rarities: Rarity[];
+}
+const { rarities } = Astro.props;
+
+const dotColor: Record<Rarity, string> = {
+  Common: "var(--r-common)",
+  Rare: "var(--r-rare)",
+  Special: "var(--r-special)",
+  Unique: "var(--r-unique)",
+};
+---
+
+<div class="toolbar" role="search">
+  <label class="search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+      aria-hidden="true" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="7" />
+      <path d="m21 21-4.3-4.3" />
+    </svg>
+    <input
+      type="search"
+      id="catalogue-search"
+      placeholder="Search items, effects, variants…"
+      autocomplete="off"
+      aria-label="Search items by name, description, effect, or variant"
+    />
+  </label>
+
+  <div class="rarity-filter" role="group" aria-label="Filter by rarity">
+    <button type="button" data-rarity="all" aria-pressed="true">All</button>
+    {
+      rarities.map((r) => (
+        <button type="button" data-rarity={r.toLowerCase()} aria-pressed="false">
+          <span class="dot" style={`background:${dotColor[r]}`} aria-hidden="true"></span>
+          {r}
+        </button>
+      ))
+    }
+  </div>
+</div>

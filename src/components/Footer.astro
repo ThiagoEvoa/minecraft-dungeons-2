@@ -1,0 +1,18 @@
+---
+export interface Props {
+  itemCount?: number;
+  sectionCount?: number;
+}
+const { itemCount = 0, sectionCount = 0 } = Astro.props;
+---
+
+<footer class="footer">
+  <p class="disclaimer">
+    <strong>Fan-made, unofficial.</strong> This is a non-commercial fan project
+    and is not affiliated with, endorsed by, or sponsored by Mojang, Microsoft,
+    or any rights holder of <em>Minecraft Dungeons 2</em>. All item data and
+    icons are sourced from the third-party Minecraft Wiki and belong to their
+    respective owners. {itemCount} items across {sectionCount} sections,
+    rendered at build time.
+  </p>
+</footer>

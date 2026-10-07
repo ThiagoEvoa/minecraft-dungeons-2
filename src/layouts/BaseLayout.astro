@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Minecraft Dungeons 2 — Items Catalogue",
+  description = "A fan-made catalogue of Minecraft Dungeons 2 items: weapons, armor, artifacts, and talismans with their effects, compatible effects, and variants.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0d0f14" />
+    <meta name="description" content={description} />
+    <link
+      rel="icon"
+      href={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/favicon.svg`}
+      type="image/svg+xml"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#catalogue">Skip to catalogue</a>
+    <slot />
+  </body>
+</html>
