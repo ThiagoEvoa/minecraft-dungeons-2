@@ -96,7 +96,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Greataxe"
         },
         {
           "name": "Axe",
@@ -155,7 +156,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Hunter's Hatchet"
         },
         {
           "name": "Battle Hammer",
@@ -229,7 +231,9 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Emerald Hammer",
+          "codename": "Hammer"
         },
         {
           "name": "Battlestaff",
@@ -283,7 +287,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Elemental Staff"
         },
         {
           "name": "Cacaphonous Cleaver",
@@ -352,7 +357,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Meat Cleaver"
         },
         {
           "name": "Carapace Mace",
@@ -419,7 +425,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Mace"
         },
         {
           "name": "Claymore",
@@ -508,7 +515,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Slaymore"
         },
         {
           "name": "Clobberer",
@@ -567,7 +575,9 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Redstone Wrecker",
+          "codename": "Giant Club"
         },
         {
           "name": "Cookiecutter",
@@ -646,7 +656,9 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Lullaby Blade",
+          "codename": "Curved Greatsword"
         },
         {
           "name": "Diamond Shovel",
@@ -720,7 +732,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Shovel"
         },
         {
           "name": "Double Daggers",
@@ -784,7 +797,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Venomous Fangs"
         },
         {
           "name": "Double Sickles",
@@ -858,7 +872,8 @@
               "description": "Critical hits with melee weapons deal X% more damage.",
               "percentage_range": "15%–25%"
             }
-          ]
+          ],
+          "variants": "Sift Sickles"
         },
         {
           "name": "Elemental Staff",
@@ -912,7 +927,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Battlestaff"
         },
         {
           "name": "Emerald Hammer",
@@ -986,7 +1002,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Battle Hammer"
         },
         {
           "name": "Frostbiter",
@@ -1038,7 +1055,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Longsword"
         },
         {
           "name": "Gauntlets",
@@ -1117,7 +1135,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Prime Enchanter's Gauntlets"
         },
         {
           "name": "Glaive",
@@ -1176,7 +1195,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Golden Glaive"
         },
         {
           "name": "Golden Glaive",
@@ -1233,7 +1253,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Glaive"
         },
         {
           "name": "Greataxe",
@@ -1327,7 +1348,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Awesomeaxe"
         },
         {
           "name": "Greatsword",
@@ -1416,7 +1438,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "The Darkshard"
         },
         {
           "name": "Heartbreaker",
@@ -1473,7 +1496,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "War Hammer"
         },
         {
           "name": "Hunter's Hatchet",
@@ -1530,7 +1554,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Axe"
         },
         {
           "name": "Longsword",
@@ -1584,7 +1609,9 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Frostbiter",
+          "codename": "Straight Sword"
         },
         {
           "name": "Lullaby Blade",
@@ -1646,7 +1673,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Cookiecutter"
         },
         {
           "name": "Lunar Sickle",
@@ -1698,7 +1726,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Tidal Sickle"
         },
         {
           "name": "Mace",
@@ -1769,7 +1798,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Carapace Mace"
         },
         {
           "name": "Meat Cleaver",
@@ -1838,7 +1868,9 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Cacaphonous Cleaver",
+          "codename": "Cleaver"
         },
         {
           "name": "Mob Mallet",
@@ -1897,7 +1929,9 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Monster Masher",
+          "codename": "Giant Mallet"
         },
         {
           "name": "Monster Masher",
@@ -1954,7 +1988,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Mob Mallet"
         },
         {
           "name": "Pickaxe",
@@ -2018,7 +2053,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "The Prospector's Pick"
         },
         {
           "name": "Pike",
@@ -2077,7 +2113,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Stormcaller"
         },
         {
           "name": "Pride of the Plains",
@@ -2156,7 +2193,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Riftslasher"
         },
         {
           "name": "Prime Enchanter's Gauntlets",
@@ -2233,7 +2271,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Gauntlets"
         },
         {
           "name": "Rapier",
@@ -2312,7 +2351,8 @@
               "description": "Critical hits with melee weapons deal X% more damage.",
               "percentage_range": "15%–25%"
             }
-          ]
+          ],
+          "variants": "The Thousand Cuts"
         },
         {
           "name": "Rascal's Razor",
@@ -2389,7 +2429,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Sabre"
         },
         {
           "name": "Redstone Wrecker",
@@ -2446,7 +2487,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Clobberer"
         },
         {
           "name": "Riftslasher",
@@ -2525,7 +2567,9 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Pride of the Plains",
+          "codename": "Curved Longsword"
         },
         {
           "name": "Sabre",
@@ -2619,7 +2663,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Rascal's Razor"
         },
         {
           "name": "Sculker Claws",
@@ -2691,7 +2736,8 @@
               "description": "Critical hits with melee weapons deal X% more damage.",
               "percentage_range": "15%–25%"
             }
-          ]
+          ],
+          "variants": "Wolf Claws"
         },
         {
           "name": "Sculker's Bane",
@@ -2760,7 +2806,8 @@
               "description": "Critical hits with melee weapons deal X% more damage.",
               "percentage_range": "15%–25%"
             }
-          ]
+          ],
+          "variants": "Twilight Dagger"
         },
         {
           "name": "Scythe",
@@ -2814,7 +2861,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Soul Reaper"
         },
         {
           "name": "Short Spear",
@@ -2873,7 +2921,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Spectral Spear"
         },
         {
           "name": "Shovel",
@@ -2947,7 +2996,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Diamond Shovel"
         },
         {
           "name": "Sift Sickles",
@@ -3021,7 +3071,8 @@
               "description": "Critical hits with melee weapons deal X% more damage.",
               "percentage_range": "15%–25%"
             }
-          ]
+          ],
+          "variants": "Double Sickles"
         },
         {
           "name": "Slaymore",
@@ -3108,7 +3159,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Claymore"
         },
         {
           "name": "Soul Reaper",
@@ -3162,7 +3214,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Scythe"
         },
         {
           "name": "Spectral Spear",
@@ -3221,7 +3274,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Short Spear"
         },
         {
           "name": "Stormcaller",
@@ -3275,7 +3329,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Pike"
         },
         {
           "name": "Sword",
@@ -3354,7 +3409,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "The Burning Blade"
         },
         {
           "name": "The Burning Blade",
@@ -3431,7 +3487,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Sword"
         },
         {
           "name": "The Darkshard",
@@ -3518,7 +3575,8 @@
               "description": "Deal X% more damage to enemies who are at full health.",
               "percentage_range": "20%–50%"
             }
-          ]
+          ],
+          "variants": "Greatsword"
         },
         {
           "name": "The Prospector's Pick",
@@ -3580,7 +3638,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Pickaxe"
         },
         {
           "name": "The Thousand Cuts",
@@ -3642,7 +3701,8 @@
               "description": "Critical hits with melee weapons deal X% more damage.",
               "percentage_range": "15%–25%"
             }
-          ]
+          ],
+          "variants": "Rapier"
         },
         {
           "name": "Tidal Sickle",
@@ -3694,7 +3754,9 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Lunar Sickle",
+          "codename": "Moon Sword"
         },
         {
           "name": "Twilight Dagger",
@@ -3746,7 +3808,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Sculker's Bane"
         },
         {
           "name": "Venomous Fangs",
@@ -3808,7 +3871,8 @@
               "description": "Critical hits with melee weapons deal X% more damage.",
               "percentage_range": "15%–25%"
             }
-          ]
+          ],
+          "variants": "Double Daggers"
         },
         {
           "name": "War Hammer",
@@ -3867,7 +3931,8 @@
               "description": "Melee attacks deal X% more damage.",
               "percentage_range": "10%–30%"
             }
-          ]
+          ],
+          "variants": "Heartbreaker"
         },
         {
           "name": "Wolf Claws",
@@ -3941,7 +4006,9 @@
               "description": "Critical hits with melee weapons deal X% more damage.",
               "percentage_range": "15%–25%"
             }
-          ]
+          ],
+          "variants": "Sculker Claws",
+          "codename": "Claws"
         }
       ]
     },
@@ -3960,7 +4027,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Ranger's Promise"
         },
         {
           "name": "Creaking's Reach",
@@ -3973,7 +4041,8 @@
           "effects": [
             "Ranged attacks deal 100% more damage from far away."
           ],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Longbow"
         },
         {
           "name": "Crossbow",
@@ -3986,7 +4055,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "The Shackler"
         },
         {
           "name": "Double Crossers",
@@ -3999,7 +4069,8 @@
           "effects": [
             "Rolling increases next attack damage by 20%, stacking."
           ],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Dual Crossbows"
         },
         {
           "name": "Dual Crossbows",
@@ -4012,7 +4083,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Double Crossers"
         },
         {
           "name": "Greatbow",
@@ -4025,7 +4097,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Humbler Heartstring"
         },
         {
           "name": "Harp Crossbow",
@@ -4036,7 +4109,8 @@
             "UNIQUE"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Scatter Crossbow"
         },
         {
           "name": "Heavy Crossbow",
@@ -4049,7 +4123,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "The Close Ranger"
         },
         {
           "name": "Humbler Heartstring",
@@ -4062,7 +4137,8 @@
           "effects": [
             "Projectiles can pierce up to 10 enemies."
           ],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Greatbow"
         },
         {
           "name": "Longbow",
@@ -4075,7 +4151,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Creaking's Reach"
         },
         {
           "name": "Paragon",
@@ -4086,7 +4163,8 @@
             "UNIQUE"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Powerbow"
         },
         {
           "name": "Phantom Wing",
@@ -4099,7 +4177,8 @@
           "effects": [
             "Increases jump shot damage dealt by 6%."
           ],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Trickbow"
         },
         {
           "name": "Powerbow",
@@ -4112,7 +4191,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Paragon"
         },
         {
           "name": "Ranger's Promise",
@@ -4125,7 +4205,8 @@
           "effects": [
             "Increases chance of critical hits from ranged attacks by 25%."
           ],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Bow"
         },
         {
           "name": "Rapid Crossbow",
@@ -4138,7 +4219,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "The Cross Pollinator"
         },
         {
           "name": "Scatter Crossbow",
@@ -4151,7 +4233,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Harp Crossbow"
         },
         {
           "name": "Shooting Star",
@@ -4164,7 +4247,8 @@
           "effects": [
             "Grants a 20% chance to evade melee damage."
           ],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Shortbow"
         },
         {
           "name": "Shortbow",
@@ -4177,7 +4261,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Shooting Star"
         },
         {
           "name": "The Close Ranger",
@@ -4188,7 +4273,8 @@
             "UNIQUE"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Heavy Crossbow"
         },
         {
           "name": "The Cross Pollinator",
@@ -4201,7 +4287,8 @@
           "effects": [
             "Reduces time between shots with ranged weapons by 40%."
           ],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Rapid Crossbow"
         },
         {
           "name": "The Shackler",
@@ -4214,7 +4301,8 @@
           "effects": [
             "Attacks have a 30% chance to inflict the Chained status on hits."
           ],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Crossbow"
         },
         {
           "name": "Trickbow",
@@ -4227,7 +4315,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Phantom Wing"
         }
       ]
     },
@@ -4336,7 +4425,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Sorcerer Armor"
         },
         {
           "name": "Beekeeper Armor",
@@ -4385,7 +4475,8 @@
               "description": "Increases the area of all positive status effects by X%.",
               "percentage_range": "20%–40%"
             }
-          ]
+          ],
+          "variants": "Hivemind Armor"
         },
         {
           "name": "Bounty Hunter Armor",
@@ -4444,7 +4535,8 @@
               "description": "Recover from negative statuses X% faster.",
               "percentage_range": "20%–30%"
             }
-          ]
+          ],
+          "variants": "Dauntless Armor"
         },
         {
           "name": "Dauntless Armor",
@@ -4518,7 +4610,8 @@
               "description": "Recover from negative statuses X% faster.",
               "percentage_range": "20%–30%"
             }
-          ]
+          ],
+          "variants": "Bounty Hunter Armor"
         },
         {
           "name": "Disciple Armor",
@@ -4587,7 +4680,8 @@
               "description": "Increases melee attack speed by X%.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Sage Armor"
         },
         {
           "name": "Dreamruler Armor",
@@ -4598,7 +4692,8 @@
             "UNIQUE"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "variants": "Phantom Armor"
         },
         {
           "name": "Fly Agaric Armor",
@@ -4717,7 +4812,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Mushroom Armor"
         },
         {
           "name": "Hivemind Armor",
@@ -4781,7 +4877,8 @@
               "description": "Increases the area of all positive status effects by X%.",
               "percentage_range": "20%–40%"
             }
-          ]
+          ],
+          "variants": "Beekeeper Armor"
         },
         {
           "name": "Humbler Armor",
@@ -4855,7 +4952,8 @@
               "description": "Recover from negative statuses X% faster.",
               "percentage_range": "20%–30%"
             }
-          ]
+          ],
+          "variants": "Protector Armor"
         },
         {
           "name": "Mad Sifter Armor",
@@ -4964,7 +5062,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Sifter Armor"
         },
         {
           "name": "Monarch Armor",
@@ -5078,7 +5177,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Sculker Armor"
         },
         {
           "name": "Monstrosity Armor",
@@ -5197,7 +5297,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Redstone Armor"
         },
         {
           "name": "Mushroom Armor",
@@ -5301,7 +5402,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Fly Agaric Armor"
         },
         {
           "name": "Mystic Armor",
@@ -5370,7 +5472,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Oracle Armor"
         },
         {
           "name": "Nomad Armor",
@@ -5409,7 +5512,8 @@
               "description": "Increases melee attack speed by X%.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Rover Armor"
         },
         {
           "name": "Oracle Armor",
@@ -5493,7 +5597,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Mystic Armor"
         },
         {
           "name": "Packleader Armor",
@@ -5552,7 +5657,8 @@
               "description": "Defeated companions come back X% faster.",
               "percentage_range": "5%–15%"
             }
-          ]
+          ],
+          "variants": "Wolfpack Armor"
         },
         {
           "name": "Phantom Armor",
@@ -5626,7 +5732,8 @@
               "description": "Shadowcloaking lasts X% longer.",
               "percentage_range": "20%–35%"
             }
-          ]
+          ],
+          "variants": "Dreamruler Armor"
         },
         {
           "name": "Protector Armor",
@@ -5685,7 +5792,8 @@
               "description": "Recover from negative statuses X% faster.",
               "percentage_range": "20%–30%"
             }
-          ]
+          ],
+          "variants": "Humbler Armor"
         },
         {
           "name": "Ranger Armor",
@@ -5734,7 +5842,8 @@
               "description": "Increases movement speed by X%.",
               "percentage_range": "5%–15%"
             }
-          ]
+          ],
+          "variants": "Sharpshooter Armor"
         },
         {
           "name": "Realmreacher Armor",
@@ -5828,7 +5937,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Soul Corruptor Armor"
         },
         {
           "name": "Redstone Armor",
@@ -5932,7 +6042,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Monstrosity Armor"
         },
         {
           "name": "Rimefrost Armor",
@@ -6051,7 +6162,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Steel Wool Armor"
         },
         {
           "name": "Rover Armor",
@@ -6105,7 +6217,8 @@
               "description": "Increases melee attack speed by X%.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Nomad Armor"
         },
         {
           "name": "Sage Armor",
@@ -6189,7 +6302,8 @@
               "description": "Increases melee attack speed by X%.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Disciple Armor"
         },
         {
           "name": "Scamp Armor",
@@ -6243,7 +6357,8 @@
               "description": "Shadowcloaking lasts X% longer.",
               "percentage_range": "20%–35%"
             }
-          ]
+          ],
+          "variants": "Scoundrel Armor"
         },
         {
           "name": "Scoundrel Armor",
@@ -6312,7 +6427,8 @@
               "description": "Shadowcloaking lasts X% longer.",
               "percentage_range": "20%–35%"
             }
-          ]
+          ],
+          "variants": "Scamp Armor"
         },
         {
           "name": "Sculk Digger Armor",
@@ -6401,7 +6517,8 @@
               "description": "Shadowcloaking lasts X% longer.",
               "percentage_range": "20%–35%"
             }
-          ]
+          ],
+          "variants": "Twisted Warden Armor"
         },
         {
           "name": "Sculker Armor",
@@ -6500,7 +6617,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Monarch Armor"
         },
         {
           "name": "Sharpshooter Armor",
@@ -6564,7 +6682,8 @@
               "description": "Increases movement speed by X%.",
               "percentage_range": "5%–15%"
             }
-          ]
+          ],
+          "variants": "Ranger Armor"
         },
         {
           "name": "Sifter Armor",
@@ -6658,7 +6777,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Mad Sifter Armor"
         },
         {
           "name": "Sorcerer Armor",
@@ -6727,7 +6847,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Alchemist Armor"
         },
         {
           "name": "Soul Corruptor Armor",
@@ -6836,7 +6957,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Realmreacher Armor"
         },
         {
           "name": "Steel Wool Armor",
@@ -6940,7 +7062,8 @@
               "description": "Poison attacks deal X% more damage.",
               "percentage_range": "10%–20%"
             }
-          ]
+          ],
+          "variants": "Rimefrost Armor"
         },
         {
           "name": "Treehugger Armor",
@@ -6999,7 +7122,8 @@
               "description": "Defeated companions come back X% faster.",
               "percentage_range": "5%–15%"
             }
-          ]
+          ],
+          "variants": "Woodsprite Armor"
         },
         {
           "name": "Twisted Warden Armor",
@@ -7103,7 +7227,8 @@
               "description": "Shadowcloaking lasts X% longer.",
               "percentage_range": "20%–35%"
             }
-          ]
+          ],
+          "variants": "Sculk Digger Armor"
         },
         {
           "name": "Wolfpack Armor",
@@ -7147,7 +7272,8 @@
               "description": "Defeated companions come back X% faster.",
               "percentage_range": "5%–15%"
             }
-          ]
+          ],
+          "variants": "Packleader Armor"
         },
         {
           "name": "Woodsprite Armor",
@@ -7221,7 +7347,8 @@
               "description": "Defeated companions come back X% faster.",
               "percentage_range": "5%–15%"
             }
-          ]
+          ],
+          "variants": "Treehugger Armor"
         }
       ]
     },
@@ -7240,7 +7367,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "War Banner",
+          "cost": "45"
         },
         {
           "name": "Blaze Bangle",
@@ -7253,7 +7382,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Fire Bracelet",
+          "cost": "35"
         },
         {
           "name": "Blight Bangle",
@@ -7266,7 +7397,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Poison Bracelet",
+          "cost": "35"
         },
         {
           "name": "Blizzard Bangle",
@@ -7279,7 +7412,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Frost Bracelet",
+          "cost": "35"
         },
         {
           "name": "Cinder Scepter",
@@ -7292,7 +7427,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Flame Sceptre [ sic ]",
+          "cost": "25"
         },
         {
           "name": "Conductive Quiver",
@@ -7305,7 +7442,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Lightning Quiver",
+          "cost": "20"
         },
         {
           "name": "Corrupted Beacon",
@@ -7318,7 +7457,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "20"
         },
         {
           "name": "Corrupted Seeds",
@@ -7331,7 +7471,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "20"
         },
         {
           "name": "Creeper Candle",
@@ -7344,7 +7485,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "25"
         },
         {
           "name": "Death Cap Mushroom",
@@ -7357,7 +7499,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "20"
         },
         {
           "name": "Echo Ocarina",
@@ -7370,7 +7513,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Carapace Ocarina",
+          "cost": "40"
         },
         {
           "name": "Electric Bangle",
@@ -7383,7 +7528,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Conductive Bracelet",
+          "cost": "35"
         },
         {
           "name": "Ender Fog",
@@ -7396,7 +7543,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Smoke Bomb",
+          "cost": "20"
         },
         {
           "name": "Fighter's Flute",
@@ -7409,7 +7558,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Fighter's Fife",
+          "cost": "45"
         },
         {
           "name": "Fighting Fungus",
@@ -7422,7 +7573,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Maiming Mushroom"
         },
         {
           "name": "Firework Arrow",
@@ -7435,7 +7587,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Firework Quiver",
+          "cost": "20"
         },
         {
           "name": "Flaming Quiver",
@@ -7448,7 +7602,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Flame Quiver",
+          "cost": "20"
         },
         {
           "name": "Freezing Quiver",
@@ -7461,7 +7617,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Frost Quiver",
+          "cost": "20"
         },
         {
           "name": "Grindstone",
@@ -7474,7 +7632,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "30"
         },
         {
           "name": "Honey Dipper",
@@ -7487,7 +7646,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Honeypot",
+          "cost": "45"
         },
         {
           "name": "Humbling Horn",
@@ -7500,7 +7661,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Rallying Horn",
+          "cost": "25"
         },
         {
           "name": "Lightning Rod",
@@ -7513,7 +7676,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "20"
         },
         {
           "name": "Picnic Basket",
@@ -7526,7 +7690,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Picnic Blanket",
+          "cost": "15"
         },
         {
           "name": "Pouch of Ember",
@@ -7539,7 +7705,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Satchel_Fire",
+          "cost": "40"
         },
         {
           "name": "Pouch of Frost",
@@ -7554,7 +7722,9 @@
           "effects": [
             "Fire attacks deal 10% more damage"
           ],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Satchel_Frost",
+          "cost": "40"
         },
         {
           "name": "Pouch of Poison",
@@ -7580,7 +7750,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Satchel_Conductive",
+          "cost": "40"
         },
         {
           "name": "Powershaker",
@@ -7593,7 +7765,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "35"
         },
         {
           "name": "Redstone Mine Launcher",
@@ -7606,7 +7779,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "40"
         },
         {
           "name": "Soul Harvester",
@@ -7619,7 +7793,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "15"
         },
         {
           "name": "Tempo Truffle",
@@ -7632,7 +7807,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Haste Mushroom",
+          "cost": "20"
         },
         {
           "name": "Totem of Casting",
@@ -7645,7 +7822,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "30"
         },
         {
           "name": "Totem of Regeneration",
@@ -7658,7 +7836,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "65"
         },
         {
           "name": "Totem of Shielding",
@@ -7671,7 +7850,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "30"
         },
         {
           "name": "Turtle Master's Mandolin",
@@ -7684,7 +7864,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Iron Hide Lute",
+          "cost": "20"
         },
         {
           "name": "Venomous Quiver",
@@ -7697,7 +7879,9 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Poison Quiver",
+          "cost": "20"
         },
         {
           "name": "Warding Chimes",
@@ -7710,7 +7894,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "40"
         },
         {
           "name": "Warrior Drums",
@@ -7723,7 +7908,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "45"
         },
         {
           "name": "Winter Staff",
@@ -7738,7 +7924,9 @@
           "effects": [
             "Reduces artifact cooldown by 20%. Frost attacks deal 15% more damage."
           ],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "codename": "Blizzard Staff",
+          "cost": "15"
         },
         {
           "name": "Witch Brew",
@@ -7751,7 +7939,8 @@
             "SPECIAL"
           ],
           "effects": [],
-          "compatible_effects": []
+          "compatible_effects": [],
+          "cost": "20"
         }
       ]
     },
@@ -7780,7 +7969,8 @@
               "description": "Ranged attacks deal 35% more damage",
               "percentage_range": "35%"
             }
-          ]
+          ],
+          "codename": "Ranged Buff"
         },
         {
           "name": "Armadillo Amulet",
@@ -7803,7 +7993,8 @@
               "description": "Reduces rolling cooldown time by 45%",
               "percentage_range": "45%"
             }
-          ]
+          ],
+          "codename": "Rolling Cooldown"
         },
         {
           "name": "Essence of Efficiency",
@@ -7849,7 +8040,8 @@
               "description": "Melee attacks deal 35% more damage",
               "percentage_range": "35%"
             }
-          ]
+          ],
+          "codename": "Brawling"
         },
         {
           "name": "Golem Kit",
@@ -7859,7 +8051,8 @@
           "rarity": [
             "COMMON"
           ],
-          "effects": []
+          "effects": [],
+          "codename": "Iron Golem"
         },
         {
           "name": "Healing Heart",
@@ -7882,7 +8075,8 @@
               "description": "Restores health by 10% per second after 5 seconds out of combat.",
               "percentage_range": "10%"
             }
-          ]
+          ],
+          "codename": "Healing"
         },
         {
           "name": "Lucky Clover",
@@ -7905,7 +8099,8 @@
               "description": "Grants a 7% chance to get additional loot drops.",
               "percentage_range": "7%"
             }
-          ]
+          ],
+          "codename": "Double Drop"
         },
         {
           "name": "Looter's Charm",
@@ -7928,7 +8123,8 @@
               "description": "Grants a 4% increased chance for defeated enemies to drop loot",
               "percentage_range": "4%"
             }
-          ]
+          ],
+          "codename": "Drop Chance"
         },
         {
           "name": "Medallion of Momentum",
@@ -7951,7 +8147,8 @@
               "description": "Increases movement speed by 30% if moving for more than 3 seconds.",
               "percentage_range": "30%"
             }
-          ]
+          ],
+          "codename": "Speed Increment"
         },
         {
           "name": "Ocelot's Paw",
@@ -7961,7 +8158,8 @@
           "rarity": [
             "COMMON"
           ],
-          "effects": []
+          "effects": [],
+          "codename": "Plummeting"
         },
         {
           "name": "Prickle's Mark",
@@ -7994,7 +8192,8 @@
               "description": "Increases the player's maximum health by 35%",
               "percentage_range": "35%"
             }
-          ]
+          ],
+          "codename": "Health Boost"
         },
         {
           "name": "Tasty Bone",
@@ -8040,7 +8239,8 @@
               "description": "Grants a 40% damage increase while health is above 75%",
               "percentage_range": "40%–75%"
             }
-          ]
+          ],
+          "codename": "Healthy Strike"
         },
         {
           "name": "The Eye of Experience",
@@ -8086,7 +8286,8 @@
               "description": "Grants up to a 50% damage bonus based on emeralds held, effective to a maximum of 9000 emeralds.",
               "percentage_range": "50%"
             }
-          ]
+          ],
+          "codename": "Firing Emeralds"
         },
         {
           "name": "Twig of Dark Oak",
@@ -8109,7 +8310,8 @@
               "description": "Carry 60% more ammo",
               "percentage_range": "60%"
             }
-          ]
+          ],
+          "codename": "Ammo Capacity"
         },
         {
           "name": "Twisted Tooth",
@@ -8132,7 +8334,8 @@
               "description": "Increases souls gained by 140%",
               "percentage_range": "140%"
             }
-          ]
+          ],
+          "codename": "Soul Gather"
         },
         {
           "name": "Wobblestone",
@@ -8142,7 +8345,8 @@
           "rarity": [
             "COMMON"
           ],
-          "effects": []
+          "effects": [],
+          "codename": "Wobble"
         }
       ]
     }

@@ -209,7 +209,7 @@ def scrape_item(url, effect_index=None):
             if heading and value_cell:
                 key = clean_text(heading)
                 value = clean_text(value_cell)
-                if key in {"Effects", "Type", "Rarity"} and value:
+                if key in {"Effects", "Type", "Rarity", "Variants", "Codename", "Cost"} and value:
                     details[key] = value
 
     item_type = details.get("Type")
@@ -256,6 +256,13 @@ def scrape_item(url, effect_index=None):
     }
     if item_type != "Talisman":
         result["compatible_effects"] = compatible_effects
+    # Optional infobox fields, present only on some item types (e.g. artifact
+    # Codename/Cost, gear Variants). Omitted when the infobox lacks the row.
+    for key, field in (("Variants", "variants"),
+                       ("Codename", "codename"),
+                       ("Cost", "cost")):
+        if details.get(key):
+            result[field] = details[key]
     return result
 
 def collect_sections(content):
@@ -390,6 +397,9 @@ def main():
              }
             if "compatible_effects" in data:
                 item["compatible_effects"] = data["compatible_effects"]
+            for field in ("variants", "codename", "cost"):
+                if field in data:
+                    item[field] = data[field]
             scraped.append(item)
             print(f"   [{index}/{len(items)}] ok   {name}")
             time.sleep(args.delay)
