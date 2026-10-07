@@ -61,6 +61,18 @@ def build_effect_index(soup):
     return index
 
 
+def split_rarity(value):
+    """Split a rarity string like ``"COMMON / RARE / SPECIAL"`` into a list.
+
+    Returns ``["COMMON", "RARE", "SPECIAL"]`` (whitespace-trimmed, empty parts
+    dropped) or ``None`` when the value is absent, keeping ``rarity: null`` for
+    items that carry no rarity row.
+    """
+    if not value:
+        return None
+    return [part.strip() for part in value.split("/") if part.strip()]
+
+
 def _extract_modifier(cell):
     """Pull the parenthesized value from a cell like ``Totem Radius (55%)``.
 
@@ -239,7 +251,7 @@ def scrape_item(url, effect_index=None):
         "image": image_url,
         "description": paragraphs[0] if paragraphs else None,
         "type": item_type,
-        "rarity": details.get("Rarity"),
+        "rarity": split_rarity(details.get("Rarity")),
         "effects": effects,
     }
     if item_type != "Talisman":
