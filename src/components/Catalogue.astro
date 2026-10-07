@@ -34,7 +34,9 @@ const clientData = {
   })),
 };
 
-const dataJson = JSON.stringify(clientData);
+// Escape `<` so a value containing `</script>` can never break out of the
+// inline data tag (robustness for future scraper growth; valid JSON).
+const dataJson = JSON.stringify(clientData).replace(/</g, "\\u003c");
 ---
 
 <div class="catalogue-wrap" id="catalogue">
